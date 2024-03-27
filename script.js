@@ -83,13 +83,13 @@ class Animal {
 
 class Dog extends Animal {
     makeSound() {
-        console.log('Woof!');
+        console.log('Woo');
     }
 }
 
 class Cat extends Animal {
     makeSound() {
-        console.log('Meow!');
+        console.log('Meow');
     }
 }
 
