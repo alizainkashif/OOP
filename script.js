@@ -49,3 +49,53 @@ console.log(obj.hello())
 
 // If child and parent have same method 
 // child method will be used (Method Overriding)
+
+
+
+// Encapsulation
+class Person {
+    constructor(name, age) {
+        this._name = name; // Private property
+        this._age = age; // Private property
+    }
+
+    getName() {
+        return this._name; // Public method
+    }
+
+    getAge() {
+        return this._age; // Public method
+    }
+}
+
+let person = new Person('John', 30);
+console.log(person.getName());
+console.log(person.getAge()); 
+
+
+
+// Polymorphism 
+class Animal {
+    makeSound() {
+        console.log('Animal makes a sound');
+    }
+}
+
+class Dog extends Animal {
+    makeSound() {
+        console.log('Woof!');
+    }
+}
+
+class Cat extends Animal {
+    makeSound() {
+        console.log('Meow!');
+    }
+}
+
+let myDog = new Dog();
+let myCat = new Cat();
+
+myDog.makeSound();
+myCat.makeSound(); 
+
